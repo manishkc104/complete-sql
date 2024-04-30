@@ -37,3 +37,37 @@ WHERE condition;
 ```
 
 `>`,`>=`,`<`,`<=`,`=`,`<>`,`BETWEEN`,`LIKE`,`IN` are the list of operators that can be used with `WHERE` clause.
+
+### AND, OR and NOT operators
+
+`AND`, `OR`, `NOT` operators are basically used with WHERE clause to retrieve data from table by filtering it.
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+```
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2 OR condition3 ...;
+```
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+```
+
+### IN Operator
+
+The `IN` operator allows you to specify multiple values in a `WHERE` clause.
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+```
+
+The SQL IN operator filters data based on a list of specific values. In general, we can only use one condition in the WHEN clause, but the IN operator allows us to specify multiple values.
