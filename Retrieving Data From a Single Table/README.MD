@@ -1,5 +1,5 @@
 <div align="center">
-  <h3 align="center">Docker Explore</h3>
+  <h3 align="center">Retrieving Data From a Single Table</h3>
 </div>
 
 <details open>
@@ -7,15 +7,6 @@
   <ol>
     <li>
       <a href="#introduction">Introduction</a>
-    </li>
-     <li>
-      <a href="#built-with">Built With</a>
-    </li>
-     <li>
-      <a href="#features">Features</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
     </li>
   </ol>
 </details>
