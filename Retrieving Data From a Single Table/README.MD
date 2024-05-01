@@ -71,3 +71,13 @@ WHERE column_name IN (value1, value2, ...);
 ```
 
 The SQL IN operator filters data based on a list of specific values. In general, we can only use one condition in the WHEN clause, but the IN operator allows us to specify multiple values.
+
+### BETWEEN Operator
+
+The `BETWEEN` operator selects values within a given range. The values can be numbers, text, or dates.
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+```
