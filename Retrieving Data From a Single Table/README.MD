@@ -90,3 +90,14 @@ WHERE column_name BETWEEN value1 AND value2;
 FROM table_name
 ORDER BY column1, column2, ... ASC|DESC;
 ```
+
+### LIMIT Clause
+
+`LIMIT` clause id used to specify the number of records that needs to be returned.
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+```
