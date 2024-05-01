@@ -81,3 +81,12 @@ SELECT column_name(s)
 FROM table_name
 WHERE column_name BETWEEN value1 AND value2;
 ```
+
+### ORDER BY Operator
+
+`ORDER BY` operator is used to sort the data in either ascending or descending order.
+
+```sql SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+```
