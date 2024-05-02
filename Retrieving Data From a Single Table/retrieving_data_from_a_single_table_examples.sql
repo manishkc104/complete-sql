@@ -55,20 +55,37 @@ SELECT * FROM customers where points BETWEEN 1000 AND 3000;
 -- 5.2 Select customers that are born between January 1990 and January 2000
 SELECT * FROM customers where birth_date BETWEEN '1990-01-01' AND '2000-01-01';
 
--- 6 Order By Operator
+-- 6 Like Operator
 
--- 6.1 Select customer by their first name
+-- 6.1 Select all the customers whose last name start with "b"
+SELECT * FROM customers WHERE last_name LIKE 'b%';
+
+-- 6.2 Select all customers who has letter "b" in their last name
+SELECT * FROM customers WHERE last_name LIKE '%b%';
+
+-- 6.3 Select all the customers whose last name ends with "y"
+SELECT * FROM customers WHERE last_name LIKE '%y';
+
+-- 6.4 Select all the customers whose address contain TRAIL or AVENUE
+SELECT * FROM customers WHERE address LIKE '%trail%' or address LIKE '%avenue%';
+
+-- 6.5 Select all the customers whose phone ends with 9
+SELECT * FROM customers WHERE phone LIKE '%9';
+
+-- 7 Order By Operator
+
+-- 7.1 Select customer by their first name
 SELECT * FROM customers ORDER BY first_name;
 
--- 6.2  Select order item whose order id is 2 and sort the items according to their total price 
+-- 7.2  Select order item whose order id is 2 and sort the items according to their total price 
 SELECT *, quantity * unit_price AS total_price FROM order_items WHERE order_id = 2 ORDER BY quantity * unit_price;
 
--- 7 Limit Clause 
+-- 8 Limit Clause 
 
--- 7.1 Select the first 3 customers
+-- 8.1 Select the first 3 customers
 SELECT * FROM customers LIMIT 3;
 
--- 7.2 Select the top 3 loyal customers (ie cusomters who have the most points)
+-- 8.2 Select the top 3 loyal customers (ie cusomters who have the most points)
 SELECT * FROM customers order by points DESC limit 3;
 
 
