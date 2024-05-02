@@ -81,6 +81,15 @@ SELECT column_name(s)
 FROM table_name
 WHERE column_name BETWEEN value1 AND value2;
 ```
+### LIKE Operator
+
+The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column.
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;
+```
 
 ### ORDER BY Operator
 
