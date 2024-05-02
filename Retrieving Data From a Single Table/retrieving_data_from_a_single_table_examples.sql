@@ -72,20 +72,28 @@ SELECT * FROM customers WHERE address LIKE '%trail%' or address LIKE '%avenue%';
 -- 6.5 Select all the customers whose phone ends with 9
 SELECT * FROM customers WHERE phone LIKE '%9';
 
--- 7 Order By Operator
+-- 7 IS NULL Operator 
 
--- 7.1 Select customer by their first name
+-- 7.1 Select all the customers who doesnt have a phone number
+SELECT * FROM customers WHERE phone IS NULL;
+
+-- 7.2 Select all the orders that are not shipped
+SELECT * FROM orders where shipped_date IS NULL;
+
+-- 8 Order By Operator
+
+-- 8.1 Select customer by their first name
 SELECT * FROM customers ORDER BY first_name;
 
--- 7.2  Select order item whose order id is 2 and sort the items according to their total price 
+-- 8.2  Select order item whose order id is 2 and sort the items according to their total price 
 SELECT *, quantity * unit_price AS total_price FROM order_items WHERE order_id = 2 ORDER BY quantity * unit_price;
 
--- 8 Limit Clause 
+-- 9 Limit Clause 
 
--- 8.1 Select the first 3 customers
+-- 9.1 Select the first 3 customers
 SELECT * FROM customers LIMIT 3;
 
--- 8.2 Select the top 3 loyal customers (ie cusomters who have the most points)
+-- 9.2 Select the top 3 loyal customers (ie cusomters who have the most points)
 SELECT * FROM customers order by points DESC limit 3;
 
 
