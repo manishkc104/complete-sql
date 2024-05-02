@@ -91,6 +91,16 @@ FROM table_name
 WHERE columnN LIKE pattern;
 ```
 
+### IS NULL Operator
+
+The `IS NULL` operator filters the null data present in the column  
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+```
+
 ### ORDER BY Operator
 
 `ORDER BY` operator is used to sort the data in either ascending or descending order.
