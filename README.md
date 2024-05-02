@@ -1,3 +1,3 @@
 # Complete SQL
 
-### All the section above have their indivisual README file containing detailed description.
+### All the section above have their indivisual README file containing detailed descriptions.
