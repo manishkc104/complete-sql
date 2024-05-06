@@ -33,6 +33,14 @@ There may be a situation when you just want to create an exact copy or clone of 
 ```sql
 INSERT INTO new_table SELECT * FROM original_table;
 ```
+## Updating Row
+The UPDATE statement is used to modify the existing records in a table.
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
 
 
 
