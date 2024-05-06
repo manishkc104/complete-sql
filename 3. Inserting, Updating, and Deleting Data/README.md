@@ -41,6 +41,15 @@ UPDATE table_name
 SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
+## Using SQL Sub queries
+An SQL Subquery, is a SELECT query within another query. It is also known as Inner query or Nested query and the query containing it is the outer query.
+
+```sql
+SELECT column_name [, column_name ] 
+FROM table1 [, table2 ] 
+WHERE  column_name 
+OPERATOR (SELECT column_name [,column_name ] FROM table1 [, table2 ] [WHERE]);
+```
 
 
 
