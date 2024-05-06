@@ -27,5 +27,12 @@ VALUES (value1, value2, value3, ...);
 INSERT INTO table_name
 VALUES (value1, value2, value3, ...);
 ```
+## Creating a copy of the table
+There may be a situation when you just want to create an exact copy or clone of an existing table to test or perform something without affecting the original table.
+
+```sql
+INSERT INTO new_table SELECT * FROM original_table;
+```
+
 
 
