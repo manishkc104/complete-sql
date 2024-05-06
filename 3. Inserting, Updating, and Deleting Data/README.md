@@ -51,5 +51,12 @@ WHERE  column_name
 OPERATOR (SELECT column_name [,column_name ] FROM table1 [, table2 ] [WHERE]);
 ```
 
+## Delete data from row 
+The DELETE statement is used to delete existing records in a table.
+
+```sql
+DELETE FROM table_name WHERE condition;
+```
+
 
 
