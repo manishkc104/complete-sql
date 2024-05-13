@@ -2,7 +2,7 @@
   <h3 align="center">Retrieving Data From a Multiple Table</h3>
 </div>
 
-## Note: Example contains in .sql file
+## Note: Example contains in retrieving_data_from_multiple_tables.sql file
 
 <details open>
   <summary>Table of Contents</summary>
