@@ -2,7 +2,7 @@
   <h3 align="center">Retrieving Data From a Single Table</h3>
 </div>
 
-## Note: Example contains in .sql file
+## Note: Example contains in retrieving_data_from_a_single_table_examples.sql file
 
 <details open>
   <summary>Table of Contents</summary>
