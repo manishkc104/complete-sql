@@ -2,7 +2,7 @@
   <h3 align="center">Inserting updating and deleting data</h3>
 </div>
 
-## Note: Example contains in .sql file
+## Note: Example contains in inserting_updating_deleting_data.sql file
 
 <details open>
   <summary>Table of Contents</summary>
