@@ -2,7 +2,7 @@
   <h3 align="center">Summarizing data</h3>
 </div>
 
-## Note: Example contains in .sql file
+## Note: Example contains in summarizing_data.sql file
 
 <details open>
   <summary>Table of Contents</summary>
